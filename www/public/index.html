@@ -4,6 +4,21 @@
     <script src="./bootstrap.js"></script>
   </head>
   <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+      "
+    >
+      <div>Status: <span id="game-status"></span></div>
+      <div>Points: <span id="game-points"></span></div>
+      <div>
+        <button id="game-btn">Play</button>
+      </div>
+    </div>
     <div style="display: flex; justify-content: center">
       <canvas id="snake"></canvas>
     </div>
