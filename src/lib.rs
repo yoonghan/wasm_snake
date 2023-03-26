@@ -129,7 +129,7 @@ impl World {
     }
 
     pub fn update_direction(&mut self, direction: Direction) {
-        let next_cell = self.gen_next_snake_cell(&self.snake.direction);
+        let next_cell = self.gen_next_snake_cell(direction);
 
         if self.snake.body[1].0 == next_cell.0 { return; }
 
